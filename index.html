@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- external links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- external links end-->
+    <link rel="stylesheet" href="styles.css">
+    <title>Current News</title>
+</head>
+
+<body>
+
+    <!-- title section -->
+    <h1 class="title">DailyNews</h1>
+    <div class="title-underline"></div>
+    <div class="nav-box">
+        <h2 class="navlink-1">ARTICLE LIST</h2>
+        <h2 class="navlink-2">ABOUT PAGE</h2>
+    </div>
+    <!-- title section ends-->
+
+    <!-- search and filter container -->
+    <div class="search-filter-container">
+        <div class="search-filter-box">
+            <!-- search bar -->
+            <input type="text" placeholder="Search Articles..." name="search-terms" id="search-terms">
+            <i id="search-button" class="bi bi-search"></i>
+            <!-- drop down -->
+            <select id="filter-select">
+                <option value="">Filter by...</option>
+                <option id="popularity" value="country">Country</option>
+                <option id="latest" value="catergory">Catergory</option>
+                <option id="latest" value="source">Source</option>
+            </select>
+        </div>
+    </div>
+    <!-- search and filter container ends-->
+
+
+    <div id="result"></div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
